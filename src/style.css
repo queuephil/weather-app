@@ -1,0 +1,66 @@
+/* standards ________________________________________________________________*/
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  --black010: rgba(0, 0, 0, 0.1);
+  --black050: rgba(0, 0, 0, 0.5);
+  --gray010: rgba(128, 128, 128, 0.1);
+  --gray050: rgba(128, 128, 128, 0.5);
+  --white010: rgba(255, 255, 255, 0.1);
+  --white050: rgba(255, 255, 255, 0.5);
+
+  --accent: lightsteelblue;
+
+  --shadow: 0 0 0.5rem var(--black050);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  outline: none;
+
+  font-size: 1rem;
+  line-height: 1.5;
+
+  /* border: 1px solid red; */
+}
+
+/* elements _________________________________________________________________*/
+hr {
+  border: 1px solid var(--color-black050);
+  width: 75%;
+}
+
+image {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.button {
+  border-radius: 10rem;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--accent);
+  color: var(--accent);
+
+  cursor: pointer;
+}
+
+/* segments _________________________________________________________________*/
+body {
+  > header {
+    width: 100vw;
+  }
+  > main {
+    width: clamp(300px, 100%, 900px);
+  }
+  > footer {
+    width: 100vw;
+  }
+}

@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
+    <script type="module" src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div style="width: 800px">
+      <canvas id="temperature" style="position: absolute; z-index: 1"></canvas>
+    </div>
+    <div style="width: 800px">
+      <canvas
+        id="precipitation"
+        style="position: absolute; z-index: 2"
+      ></canvas>
+    </div>
+    <div style="width: 800px" id="icons"></div>
+    <!-- <img
+      src="https://raw.githubusercontent.com/visualcrossing/WeatherIcons/refs/heads/main/PNG/2nd%20Set%20-%20Color/snow.png"
+      alt=""
+    /> -->
+  </body>
 </html>
