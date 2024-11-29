@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <script type="module" src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div style="width: 800px">
-      <canvas id="temperature" style="position: absolute; z-index: 1"></canvas>
-    </div>
-    <div style="width: 800px">
-      <canvas
-        id="precipitation"
-        style="position: absolute; z-index: 2"
-      ></canvas>
-    </div>
-    <div style="width: 800px" id="icons"></div>
-    <!-- <img
-      src="https://raw.githubusercontent.com/visualcrossing/WeatherIcons/refs/heads/main/PNG/2nd%20Set%20-%20Color/snow.png"
-      alt=""
-    /> -->
+    <header>
+      <div id="location"></div>
+      <div class="searchBar">
+        <input type="text" name="search" id="search" placeholder="Location" />
+        <span class="searchIcon material-symbols-outlined">search</span>
+      </div>
+    </header>
+    <main>
+      <div class="meteoGram">
+        <div id="dates"></div>
+        <div class="container" id="temperature">
+          <div id="dataTemperature" class="data"></div>
+          <div id="temperatureGraphDiv"></div>
+        </div>
+        <div id="icons"></div>
+        <div class="container" id="precipitation">
+          <div id="dataPrecipitation" class="data"></div>
+          <div id="precipitationGraphDiv"></div>
+        </div>
+        <div id="windDirection"></div>
+        <div class="container" id="wind">
+          <div id="dataWind" class="data"></div>
+          <div id="windGraphDiv"></div>
+        </div>
+      </div>
+      <div id="legend">
+        <div>Wind</div>
+        <div>Precipitation</div>
+        <div>Temperature</div>
+      </div>
+    </main>
   </body>
 </html>
